@@ -129,9 +129,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./header/header */ "./src/components/header/header.js");
 /* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_header_header__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _feedback_feedback__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./feedback/feedback */ "./src/components/feedback/feedback.js");
+/* harmony import */ var _useful_useful__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./useful/useful */ "./src/components/useful/useful.js");
 // import simpleParallax from 'simple-parallax-js';
 // Form
  // Hamburger
+
 
 
 
@@ -182,20 +184,6 @@ if (document.querySelector(feedback)) {
     }
   });
 }
-
-var hitContainer = document.querySelector(hit);
-hitContainer && hitContainer.addEventListener('click', function (e) {
-  var target = e.target;
-  var num = target.closest('.card__calc-js') && target.closest('.card__calc-js').querySelector('.card__calc-num-js');
-
-  if (target.classList.contains('card__add-js')) {
-    num.textContent = Number(num.textContent) + 1;
-  }
-
-  if (target.classList.contains('card__remove-js') && Number(num.textContent) != 1) {
-    num.textContent = Number(num.textContent) - 1;
-  }
-});
 
 /***/ }),
 
@@ -561,6 +549,43 @@ function overlayRemove() {
   }
 
   body.classList.remove('is-animate', 'is-active');
+}
+
+/***/ }),
+
+/***/ "./src/components/useful/useful.js":
+/*!*****************************************!*\
+  !*** ./src/components/useful/useful.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation]);
+var useful = '.useful-js ';
+
+if (document.querySelector(useful)) {
+  var usefulSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](useful, {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    centeredSlidesBounds: true,
+    effect: "fade",
+    loop: true,
+    fadeEffect: {
+      crossFade: true
+    },
+    breakpoints: {
+      992: {
+        spaceBetween: 40
+      }
+    },
+    navigation: {
+      nextEl: '.useful__button-next-js',
+      prevEl: '.useful__button-prev-js'
+    }
+  });
 }
 
 /***/ }),
