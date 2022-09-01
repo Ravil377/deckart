@@ -128,6 +128,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _article_article__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./article/article */ "./src/components/article/article.js");
 /* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./header/header */ "./src/components/header/header.js");
 /* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_header_header__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _feedback_feedback__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./feedback/feedback */ "./src/components/feedback/feedback.js");
 // import simpleParallax from 'simple-parallax-js';
 // Form
  // Hamburger
@@ -138,7 +139,63 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
  // import './header/header'
+
+/***/ }),
+
+/***/ "./src/components/feedback/feedback.js":
+/*!*********************************************!*\
+  !*** ./src/components/feedback/feedback.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation]);
+var feedback = '.feedback-js';
+
+if (document.querySelector(feedback)) {
+  var feedbackSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](feedback, {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    effect: "fade",
+    loop: true,
+    // centeredSlides: true,
+    centeredSlidesBounds: true,
+    fadeEffect: {
+      crossFade: true
+    },
+    breakpoints: {
+      992: {
+        spaceBetween: 40
+      }
+    },
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    navigation: {
+      nextEl: '.feedback__button-next-js',
+      prevEl: '.feedback__button-prev-js'
+    }
+  });
+}
+
+var hitContainer = document.querySelector(hit);
+hitContainer && hitContainer.addEventListener('click', function (e) {
+  var target = e.target;
+  var num = target.closest('.card__calc-js') && target.closest('.card__calc-js').querySelector('.card__calc-num-js');
+
+  if (target.classList.contains('card__add-js')) {
+    num.textContent = Number(num.textContent) + 1;
+  }
+
+  if (target.classList.contains('card__remove-js') && Number(num.textContent) != 1) {
+    num.textContent = Number(num.textContent) - 1;
+  }
+});
 
 /***/ }),
 
