@@ -58,8 +58,9 @@ var article = '.article-js ';
 
 if (document.querySelector(article)) {
   var articleSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](article, {
-    slidesPerView: 3,
-    spaceBetween: 40,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    centeredSlidesBounds: true,
     effect: "fade",
     loop: true,
     fadeEffect: {
@@ -68,6 +69,12 @@ if (document.querySelector(article)) {
     pagination: {
       el: '.swiper-pagination'
     },
+    // breakpoints: {
+    //     992: {
+    //         slidesPerView: 3,
+    //         spaceBetween: 40,
+    //     }
+    // },
     navigation: {
       nextEl: '.article__button-next-js',
       prevEl: '.article__button-prev-js'
