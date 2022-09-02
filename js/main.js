@@ -130,9 +130,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_header__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_header_header__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _feedback_feedback__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./feedback/feedback */ "./src/components/feedback/feedback.js");
 /* harmony import */ var _useful_useful__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./useful/useful */ "./src/components/useful/useful.js");
+/* harmony import */ var _footer_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./footer/footer */ "./src/components/footer/footer.js");
 // import simpleParallax from 'simple-parallax-js';
 // Form
  // Hamburger
+
 
 
 
@@ -184,6 +186,43 @@ if (document.querySelector(feedback)) {
     }
   });
 }
+
+/***/ }),
+
+/***/ "./src/components/footer/footer.js":
+/*!*****************************************!*\
+  !*** ./src/components/footer/footer.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var enquire_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! enquire.js */ "./node_modules/enquire.js/src/index.js");
+/* harmony import */ var enquire_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(enquire_js__WEBPACK_IMPORTED_MODULE_0__);
+
+var footerMenu = document.querySelector('.footer__two-js');
+
+var menuOpen = function menuOpen(e) {
+  var menu = e.target;
+
+  if (menu.classList.contains('footer-menu-js')) {
+    menu.closest('UL').classList.toggle('_active');
+  }
+};
+
+enquire_js__WEBPACK_IMPORTED_MODULE_0___default().register('screen and (max-width: 992px)', {
+  match: function match() {
+    footerMenu.addEventListener('click', menuOpen); // document.addEventListener('click', event => {
+    // 	if (event.target.dataset.backdrop === 'overlay') {
+    // 		hideMenu()
+    // 	}
+    // })
+    // $closeBtn.addEventListener('click', hideMenu)
+  },
+  unmatch: function unmatch() {
+    footerMenu.removeEventListener('click', menuOpen); // $closeBtn.removeEventListener('click', hideMenu)
+  }
+});
 
 /***/ }),
 
