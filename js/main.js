@@ -69,12 +69,12 @@ if (document.querySelector(article)) {
     pagination: {
       el: '.swiper-pagination'
     },
-    // breakpoints: {
-    //     992: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 40,
-    //     }
-    // },
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    },
     navigation: {
       nextEl: '.article__button-next-js',
       prevEl: '.article__button-prev-js'
@@ -131,9 +131,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _feedback_feedback__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./feedback/feedback */ "./src/components/feedback/feedback.js");
 /* harmony import */ var _useful_useful__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./useful/useful */ "./src/components/useful/useful.js");
 /* harmony import */ var _footer_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./footer/footer */ "./src/components/footer/footer.js");
+/* harmony import */ var _modal_modal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modal/modal */ "./src/components/modal/modal.js");
+/* harmony import */ var _modal_modal__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modal_modal__WEBPACK_IMPORTED_MODULE_11__);
 // import simpleParallax from 'simple-parallax-js';
 // Form
  // Hamburger
+
 
 
 
@@ -531,6 +534,7 @@ if (document.querySelector(hit)) {
         spaceBetween: 40
       },
       1300: {
+        slidesPerView: 3,
         spaceBetween: 40
       }
     },
@@ -553,6 +557,53 @@ hitContainer && hitContainer.addEventListener('click', function (e) {
   if (target.classList.contains('card__remove-js') && Number(num.textContent) != 1) {
     num.textContent = Number(num.textContent) - 1;
   }
+});
+
+/***/ }),
+
+/***/ "./src/components/modal/modal.js":
+/*!***************************************!*\
+  !*** ./src/components/modal/modal.js ***!
+  \***************************************/
+/***/ (() => {
+
+var modalOpenBtns = document.querySelectorAll('[data-id="callme"]');
+var modalCloseBtns = document.querySelectorAll('.modal__close-js');
+var modal = document.querySelector('.modal-js');
+var title = modal.querySelector('.modal__title');
+
+var closeModal = function closeModal() {
+  document.querySelector('.modal__form-js').reset();
+  modal.classList.remove('modal_opened');
+};
+
+var checkKeyPress = function checkKeyPress(e) {
+  if (e.code === "Escape") {
+    closeModal();
+  }
+};
+
+var checkPressOverlay = function checkPressOverlay(e) {
+  if (e.target === modal) {
+    closeModal();
+  }
+};
+
+var openModal = function openModal() {
+  modal.classList.add('modal_opened');
+};
+
+modalCloseBtns.forEach(function (btn) {
+  return btn.addEventListener('click', closeModal);
+});
+document.addEventListener('keydown', function (e) {
+  return checkKeyPress(e);
+});
+modal && modal.addEventListener("click", function (e) {
+  return checkPressOverlay(e);
+});
+modalOpenBtns.forEach(function (btn) {
+  return btn.addEventListener('click', openModal);
 });
 
 /***/ }),
@@ -616,7 +667,8 @@ if (document.querySelector(useful)) {
       crossFade: true
     },
     breakpoints: {
-      992: {
+      1200: {
+        slidesPerView: 3,
         spaceBetween: 40
       }
     },
