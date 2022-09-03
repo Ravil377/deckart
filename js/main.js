@@ -70,6 +70,10 @@ if (document.querySelector(article)) {
       el: '.swiper-pagination'
     },
     breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
       1200: {
         slidesPerView: 3,
         spaceBetween: 40
@@ -78,6 +82,38 @@ if (document.querySelector(article)) {
     navigation: {
       nextEl: '.article__button-next-js',
       prevEl: '.article__button-prev-js'
+    }
+  });
+}
+
+var article1 = '.article1-js ';
+
+if (document.querySelector(article1)) {
+  var article1Slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](article1, {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    centeredSlidesBounds: true,
+    effect: "fade",
+    loop: true,
+    fadeEffect: {
+      crossFade: true
+    },
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      1300: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    },
+    navigation: {
+      nextEl: '.article1__button-next-js',
+      prevEl: '.article1__button-prev-js'
     }
   });
 }
@@ -163,6 +199,7 @@ __webpack_require__.r(__webpack_exports__);
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation]);
 var feedback = '.feedback-js';
+var feedback1 = '.feedback1-js';
 
 if (document.querySelector(feedback)) {
   var feedbackSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](feedback, {
@@ -178,6 +215,33 @@ if (document.querySelector(feedback)) {
     breakpoints: {
       992: {
         spaceBetween: 40
+      }
+    },
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    navigation: {
+      nextEl: '.feedback__button-next-js',
+      prevEl: '.feedback__button-prev-js'
+    }
+  });
+}
+
+if (document.querySelector(feedback1)) {
+  var feedback1Slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](feedback1, {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    effect: "fade",
+    loop: true,
+    // centeredSlides: true,
+    centeredSlidesBounds: true,
+    fadeEffect: {
+      crossFade: true
+    },
+    breakpoints: {
+      1200: {
+        spaceBetween: 35,
+        slidesPerView: 5
       }
     },
     pagination: {

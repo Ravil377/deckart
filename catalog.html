@@ -5,13 +5,13 @@
     <meta name="theme-color" content="#10cfe6">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Главная страница сайта</title>
+    <title>Каталог товаров</title>
     <link rel="yandex-tableau-widget" href="./images/favicons/yandex-browser-manifest.json">
     <link rel="stylesheet" href="./css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 <!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body class="homepage">
+  <body class="category">
     <header class="header">
       <div class="outer header__top">
         <div class="inner">
@@ -244,652 +244,309 @@
         </div>
       </div>
     </header>
-    <div class="welcome">
-      <div class="welcome__container welcome-js"> 
-        <div class="swiper-wrapper"> 
-          <div class="welcome__slide swiper-slide" style="--bg-1:url(../images/slide1-overlay.png);"><img src="./images/slide1.png" alt="Слайд 1">
-            <div class="outer"> 
-              <div class="inner">
-                <h1>Террасная доска, заборы, ограждения и&nbsp;ступени из ДПК <span>от производителя</span></h1>
-                <ul class="welcome__list">
-                  <li> 
-                    <svg class="icon icon-check ">
-                      <use xlink:href="./images/sprite.svg#check"></use>
-                    </svg>Проектирование
-                  </li>
-                  <li> 
-                    <svg class="icon icon-check ">
-                      <use xlink:href="./images/sprite.svg#check"></use>
-                    </svg>Монтаж “под ключ”
-                  </li>
-                  <li> 
-                    <svg class="icon icon-check ">
-                      <use xlink:href="./images/sprite.svg#check"></use>
-                    </svg>Частные и коммерческие объекты
-                  </li>
-                </ul>
-                <div class="welcome__slide-bottom">
-                  <p>Доставка по всей территории<span class="rus"></span>РФ</p><a class="btn invert" href="#" data-id="">Перейти в каталог<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
-</svg>    </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="welcome__slide swiper-slide" style="--bg:url(../images/slide2.png);"><img src="./images/decor.svg" alt="Слайд 2">
-            <div class="outer"> 
-              <div class="inner">
-                <h2>Дополнительная скидка на монтаж <span>10%</span></h2>
-                <ul class="welcome__list">
-                  <li> 
-                    <svg class="icon icon-check ">
-                      <use xlink:href="./images/sprite.svg#check"></use>
-                    </svg>При покупке террасной доски Deckard
-                  </li>
-                </ul>
-                <div class="welcome__product">
-                  <div class="welcome__product-content"><img src="./images/skidka.png" alt="товар">
-                    <svg class="icon icon-decor ">
-                      <use xlink:href="./images/sprite.svg#decor"></use>
-                    </svg>
-                    <div class="welcome__product-decor"></div>
-                    <div class="welcome__product-decor1"></div>
-                    <div class="welcome__product-price"> 
-                      <div class="welcome__product-price-new">1 990
-                        <div>₽</div>
-                        <div>м<sup>2</sup></div>
-                      </div>
-                      <div class="welcome__product-price-old">2 590
-                        <div>₽</div>
-                        <div>м<sup>2</sup></div>
-                      </div>
+    <div class="welcome welcome_mini">
+      <div class="welcome__container">
+        <div class="welcome__slide" style="--bg:url(../images/slide2.png);"><img src="./images/decor.svg" alt="Слайд 2">
+          <div class="outer"> 
+            <div class="inner">
+              <div class="welcome__action">акция до 20 мая</div>
+              <h2>Дополнительная скидка на монтаж <span>10%</span></h2>
+              <ul class="welcome__list">
+                <li> 
+                  <svg class="icon icon-check ">
+                    <use xlink:href="./images/sprite.svg#check"></use>
+                  </svg>При покупке террасной доски Deckard
+                </li>
+              </ul>
+              <div class="welcome__product">
+                <div class="welcome__product-content"><img src="./images/welcome-banner.png" alt="товар">
+                  <div class="welcome__product-price"> 
+                    <div class="welcome__product-price-new">1 990
+                      <div>₽</div>
+                      <div>м<sup>2</sup></div>
+                    </div>
+                    <div class="welcome__product-price-old">2 590
+                      <div>₽</div>
+                      <div>м<sup>2</sup></div>
                     </div>
                   </div>
                 </div>
-                <div class="welcome__slide-bottom">
-                  <p>Доставка по всей территории<span class="rus"></span>РФ</p><a class="btn invert" href="#" data-id="">Узнать подробнее<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </div><a class="btn invert" href="#" data-id="">подробнее<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
 </svg>    </a>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="outer" style="height: 100px;position: absolute;left:0;top:50%;width:100%;transform:translateY(-50%);z-index: 4;">       
-        <div class="inner" style="position: relative;position: relative;height: 100%;">
-          <div class="slider__button _white slider__button-prev welcome__button-prev-js"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15.2725 30.8029L16 30.0814L1.45441 15.645L16 1.20862L15.2725 0.487127L0 15.645L15.2725 30.8029Z"/>
-</svg>
-          </div>
-          <div class="slider__button _white slider__button-next welcome__button-next-js"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15.2725 30.8029L16 30.0814L1.45441 15.645L16 1.20862L15.2725 0.487127L0 15.645L15.2725 30.8029Z"/>
-</svg>
           </div>
         </div>
       </div>
     </div>
-    <main>
-      <div class="advantages"> 
-        <div class="outer"> 
-          <div class="inner"> 
-            <ul>
-              <li> 
-                <svg class="icon icon-warehouse ">
-                  <use xlink:href="./images/sprite.svg#warehouse"></use>
-                </svg>В наличии на складе более 150 вариантов террасной доски из ДПК
-              </li>
-              <li> 
-                <svg class="icon icon-quality ">
-                  <use xlink:href="./images/sprite.svg#quality"></use>
-                </svg>Официальная гарантия на материалы - 3 года  и монтаж - 1 год
-              </li>
-              <li>
-                <svg class="icon icon-measuring-tape ">
-                  <use xlink:href="./images/sprite.svg#measuring-tape"></use>
-                </svg>Бесплатный выезд на замер и индивидуальный расчет проекта
-              </li>
-              <li>
-                <svg class="icon icon-express-delivery ">
-                  <use xlink:href="./images/sprite.svg#express-delivery"></use>
-                </svg>Быстрая доставка в любой регион РФ
-              </li>
-            </ul>
+    <div class="wrapper outer inner">
+      <main>
+        <nav class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li><a href="/">Главная</a><span class="breadcrumbs__divider">\</span></li>
+            <li class="is-active">Каталог товаров</li>
+          </ul>
+        </nav>
+        <section class="links links_mini"> 
+          <div class="title__container">
+            <h2 class="title">Каталог товаров</h2>
           </div>
-        </div>
-      </div>
-      <section class="links"> 
-        <div class="outer"> 
-          <div class="inner"> 
-            <div class="title__container">
-              <h2 class="title">Все для строительства террас</h2>
-              <p>Всегда в наличии на складе центрального офиса и у представителей в регионах</p>
-            </div>
-            <ul> 
-              <li> <img src="./images/link1.png" alt="Террасная доска из ДПК">
-                <div class="link__content">
-                  <p>Террасная доска из ДПК<span>более 29 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ul> 
+            <li> <img src="./images/link1.png" alt="Террасная доска из ДПК">
+              <div class="link__content">
+                <p>Террасная доска из ДПК<span>более 29 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
 </svg>    </a>
-                </div>
-              </li>
-              <li> <img src="./images/link2.png" alt="Ограждения из ДПК">
-                <div class="link__content">
-                  <p>Ограждения из ДПК<span>более 120 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </div>
+            </li>
+            <li> <img src="./images/link2.png" alt="Ограждения из ДПК">
+              <div class="link__content">
+                <p>Ограждения из ДПК<span>более 120 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
 </svg>    </a>
-                </div>
-              </li>
-              <li> <img src="./images/link3.png" alt="Заборы">
-                <div class="link__content">
-                  <p>Заборы<span>более 78 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </div>
+            </li>
+            <li> <img src="./images/link3.png" alt="Заборы">
+              <div class="link__content">
+                <p>Заборы<span>более 78 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
 </svg>    </a>
-                </div>
-              </li>
-              <li> <img src="./images/link4.png" alt="Ступени из ДПК">
-                <div class="link__content">
-                  <p>Ступени из ДПК<span>более 29 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </div>
+            </li>
+            <li> <img src="./images/link4.png" alt="Ступени из ДПК">
+              <div class="link__content">
+                <p>Ступени из ДПК<span>более 29 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
 </svg>    </a>
-                </div>
-              </li>
-              <li> <img src="./images/link5.png" alt="Лавочный брус">
-                <div class="link__content">
-                  <p>Лавочный брус<span>более 29 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </div>
+            </li>
+            <li> <img src="./images/link5.png" alt="Лавочный брус">
+              <div class="link__content">
+                <p>Лавочный брус<span>более 29 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
 </svg>    </a>
-                </div>
-              </li>
-              <li> <img src="./images/link6.png" alt="Комплектующие">
-                <div class="link__content">
-                  <p>Комплектующие<span>более 29 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </div>
+            </li>
+            <li> <img src="./images/link6.png" alt="Комплектующие">
+              <div class="link__content">
+                <p>Комплектующие<span>более 29 вариантов</span></p><a class="btn" href="#" data-id="">Смотреть<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
 </svg>    </a>
-                </div>
-              </li>
-            </ul>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="article article_mini">
+          <div class="title__container">
+            <h2 class="title">Наши проекты</h2>
           </div>
-        </div>
-      </section>
-      <section class="hit">
-        <div class="outer"> 
-          <div class="inner hit__container"> 
-            <div class="title__container">
-              <h2 class="title">Хиты продаж</h2>
-            </div>
-            <div class="hit-slider hit-slider-js">
-              <ul class="swiper-wrapper">
-                <li class="swiper-slide card"> 
-                  <div class="card__gallery card__gallery-js"><img class="card__img-js" src="./images/1.png" data-src="./images/1.png" alt="Террасная доска">
-                    <div class="card__preview card__preview-js"><img src="./images/1-1.png" data-src="./images/1-1.png" alt="Террасная доска"><img src="./images/1-2.png" data-src="./images/1-2.png" alt="Террасная доска"><img src="./images/1-3.png" data-src="./images/1-3.png" alt="Террасная доска"><img src="./images/1-4.png" data-src="./images/1-4.png" alt="Террасная доска"><img src="./images/1-5.png" data-src="./images/1-5.png" alt="Террасная доска"></div>
-                    <div class="card__label">
-                      <p class="_yellow">Новинка</p>
-                    </div>
-                  </div>
-                  <div class="card__content"> 
-                    <h3>Террасная доска из ДПК Praktik New Орех</h3>
-                    <p>Есть в наличии</p>
-                    <ul> 
-                      <li>
-                        <svg class="icon icon-houses ">
-                          <use xlink:href="./images/sprite.svg#houses"></use>
-                        </svg>Для дома и дачи
-                      </li>
-                      <li>
-                        <svg class="icon icon-swimming-pool ">
-                          <use xlink:href="./images/sprite.svg#swimming-pool"></use>
-                        </svg>Для бассейнов и пирсов
-                      </li>
-                    </ul>
-                    <div class="card__size"> 
-                      <p>Длина:</p>
-                      <ul>
-                        <li>3м</li>
-                        <li class="_disabled">4м</li>
-                        <li>5м</li>
-                        <li>6м</li>
-                      </ul>
-                      <p>Размер: 150х25 мм</p>
-                    </div>
-                    <div class="card__order">
-                      <div class="card__price">
-                        <div class="card__price-new">1 990
-                          <div>₽</div>
-                          <div>м<sup>2</sup></div>
-                        </div>
-                        <div class="card__price-old">2 590
-                          <div>₽</div>
-                          <div>м<sup>2</sup></div>
-                        </div>
-                      </div>
-                      <div class="card__calc card__calc-js"> 
-                        <button class="card__remove-js">-</button>
-                        <p class="card__calc-num-js">1</p>
-                        <button class="card__add-js">+</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__buttons"> 
-                    <button class="btn" data-id="buy">Купить в 1 клик<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
-</svg>
-                    </button>
-                    <button>
-                      <svg class="icon icon-basket ">
-                        <use xlink:href="./images/sprite.svg#basket"></use>
-                      </svg>
-                      <p>Добавлено</p>
-                    </button>
-                  </div>
-                </li>
-                <li class="swiper-slide card"> 
-                  <div class="card__gallery card__gallery-js"><img class="card__img-js" src="./images/2.png" data-src="./images/2.png" alt="Террасная доска">
-                    <div class="card__preview card__preview-js"><img src="./images/2-1.png" data-src="./images/2-1.png" alt="Террасная доска"><img src="./images/2-2.png" data-src="./images/2-2.png" alt="Террасная доска"><img src="./images/2-3.png" data-src="./images/2-3.png" alt="Террасная доска"><img src="./images/2-4.png" data-src="./images/2-4.png" alt="Террасная доска"><img src="./images/2-5.png" data-src="./images/2-5.png" alt="Террасная доска"></div>
-                    <div class="card__label">
-                      <p class="_purple">Выгодно!</p>
-                    </div>
-                  </div>
-                  <div class="card__content"> 
-                    <h3>Ступень из ДПК WoodVex Select Кофе</h3>
-                    <p>Есть в наличии</p>
-                    <ul> 
-                      <li>
-                        <svg class="icon icon-houses ">
-                          <use xlink:href="./images/sprite.svg#houses"></use>
-                        </svg>Для дома и дачи
-                      </li>
-                    </ul>
-                    <div class="card__size"> 
-                      <p>Длина:</p>
-                      <ul>
-                        <li>3м</li>
-                        <li class="_disabled">4м</li>
-                        <li>5м</li>
-                        <li>6м</li>
-                      </ul>
-                      <p>Размер: 150х25 мм</p>
-                    </div>
-                    <div class="card__order">
-                      <div class="card__price">
-                        <div class="card__price-new">4 870
-                          <div>₽</div>
-                          <div>м<sup>2</sup></div>
-                        </div>
-                        <div class="card__price-old">9 590
-                          <div>₽</div>
-                          <div>м<sup>2</sup></div>
-                        </div>
-                      </div>
-                      <div class="card__calc card__calc-js"> 
-                        <button class="card__remove-js">-</button>
-                        <p class="card__calc-num-js">1</p>
-                        <button class="card__add-js">+</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__buttons"> 
-                    <button class="btn" data-id="buy">Купить в 1 клик<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
-</svg>
-                    </button>
-                    <button>
-                      <svg class="icon icon-basket ">
-                        <use xlink:href="./images/sprite.svg#basket"></use>
-                      </svg>
-                      <p>Добавлено</p>
-                    </button>
-                  </div>
-                </li>
-                <li class="swiper-slide card"> 
-                  <div class="card__gallery card__gallery-js"><img class="card__img-js" src="./images/3.png" data-src="./images/3.png" alt="Террасная доска">
-                    <div class="card__preview card__preview-js"><img src="./images/3-1.png" data-src="./images/3-1.png" alt="Террасная доска"><img src="./images/3-2.png" data-src="./images/3-2.png" alt="Террасная доска"><img src="./images/3-3.png" data-src="./images/3-3.png" alt="Террасная доска"><img src="./images/3-4.png" data-src="./images/3-4.png" alt="Террасная доска"><img src="./images/3-5.png" data-src="./images/3-5.png" alt="Террасная доска"></div>
-                    <div class="card__label"></div>
-                  </div>
-                  <div class="card__content"> 
-                    <h3>Ступень из ДПК WoodVex Select Кофе</h3>
-                    <p>Есть в наличии</p>
-                    <ul> 
-                      <li>
-                        <svg class="icon icon-houses ">
-                          <use xlink:href="./images/sprite.svg#houses"></use>
-                        </svg>Для дома и дачи
-                      </li>
-                    </ul>
-                    <div class="card__size"> 
-                      <p>Длина:</p>
-                      <ul>
-                        <li>3м</li>
-                        <li class="_disabled">4м</li>
-                        <li>5м</li>
-                        <li>6м</li>
-                      </ul>
-                      <p>Размер: 150х25 мм</p>
-                    </div>
-                    <div class="card__order">
-                      <div class="card__price">
-                        <div class="card__price-new">4 870
-                          <div>₽</div>
-                          <div>м<sup>2</sup></div>
-                        </div>
-                        <div class="card__price-old">9 590
-                          <div>₽</div>
-                          <div>м<sup>2</sup></div>
-                        </div>
-                      </div>
-                      <div class="card__calc card__calc-js"> 
-                        <button class="card__remove-js">-</button>
-                        <p class="card__calc-num-js">1</p>
-                        <button class="card__add-js">+</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card__buttons"> 
-                    <button class="btn" data-id="buy">Купить в 1 клик<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
-</svg>
-                    </button>
-                    <button>
-                      <svg class="icon icon-basket ">
-                        <use xlink:href="./images/sprite.svg#basket"></use>
-                      </svg>
-                      <p>Добавлено</p>
-                    </button>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="slider__button slider__button-prev hit__button-prev-js"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15.2725 30.8029L16 30.0814L1.45441 15.645L16 1.20862L15.2725 0.487127L0 15.645L15.2725 30.8029Z"/>
-</svg>
-            </div>
-            <div class="slider__button slider__button-next hit__button-next-js"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15.2725 30.8029L16 30.0814L1.45441 15.645L16 1.20862L15.2725 0.487127L0 15.645L15.2725 30.8029Z"/>
-</svg>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="article"> 
-        <div class="outer"> 
-          <div class="inner"> 
-            <div class="title__container">
-              <h2 class="title">Строительство террас</h2>
-              <p>Спроектируем и смонтируем террасы любой сложности “под ключ”</p>
-            </div>
-            <div class="article__container article-js"> 
-              <ul class="swiper-wrapper"> 
-                <li class="swiper-slide"><img src="./images/article1.jpg" alt="Террассы для дома и дачи"><a href="#"> 
-                    <p>Террассы для дома и дачи<span>проектирование и монтаж</span></p>
-                    <div>
-                       <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="article__container article1-js"> 
+            <ul class="swiper-wrapper"> 
+              <li class="swiper-slide"><img src="./images/article1.jpg" alt="Террассы для дома и дачи"><a href="#"> 
+                  <p>Террассы для дома и дачи<span>проектирование и монтаж</span></p>
+                  <div>
+                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
 </svg>    
-                    </div></a></li>
-                <li class="swiper-slide"><img src="./images/article2.png" alt="Террассы для дома и дачи"><a href="#"> 
-                    <p>Террассы для дома и дачи<span>проектирование и монтаж</span></p>
-                    <div>
-                       <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  </div></a></li>
+              <li class="swiper-slide"><img src="./images/article2.png" alt="Террассы для дома и дачи"><a href="#"> 
+                  <p>Террассы для дома и дачи<span>проектирование и монтаж</span></p>
+                  <div>
+                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
 </svg>  
-                    </div></a></li>
-                <li class="swiper-slide"><img src="./images/article3.png" alt="Террассы для дома и дачи"><a href="#"> 
-                    <p>Террассы для дома и дачи<span>проектирование и монтаж</span></p>
-                    <div>
-                       <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  </div></a></li>
+              <li class="swiper-slide"><img src="./images/article3.png" alt="Террассы для дома и дачи"><a href="#"> 
+                  <p>Террассы для дома и дачи<span>проектирование и монтаж</span></p>
+                  <div>
+                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
 </svg>
-                    </div></a></li>
-              </ul>
-              <div class="navigation"> 
-                <div class="navigation-container">
-                  <div class="swiper-pagination"></div>
-                  <div class="navigation__button navigation__button-prev article__button-prev-js"><svg width="14" height="26" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  </div></a></li>
+            </ul>
+            <div class="navigation"> 
+              <div class="navigation-container">
+                <div class="swiper-pagination"></div>
+                <div class="navigation__button navigation__button-prev article1__button-prev-js"><svg width="14" height="26" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.2725 30.8029L16 30.0814L1.45441 15.645L16 1.20862L15.2725 0.487127L0 15.645L15.2725 30.8029Z"/>
 </svg>
-                  </div>
-                  <div class="navigation__button navigation__button-next article__button-next-js"><svg width="14" height="26" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </div>
+                <div class="navigation__button navigation__button-next article1__button-next-js"><svg width="14" height="26" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.2725 30.8029L16 30.0814L1.45441 15.645L16 1.20862L15.2725 0.487127L0 15.645L15.2725 30.8029Z"/>
 </svg>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+        <div class="advantages _radius"> 
+          <div class="outer"> 
+            <div class="inner"> 
+              <ul>
+                <li> 
+                  <svg class="icon icon-warehouse ">
+                    <use xlink:href="./images/sprite.svg#warehouse"></use>
+                  </svg>В наличии на складе более 150 вариантов террасной доски из ДПК
+                </li>
+                <li> 
+                  <svg class="icon icon-quality ">
+                    <use xlink:href="./images/sprite.svg#quality"></use>
+                  </svg>Официальная гарантия на материалы - 3 года  и монтаж - 1 год
+                </li>
+                <li>
+                  <svg class="icon icon-measuring-tape ">
+                    <use xlink:href="./images/sprite.svg#measuring-tape"></use>
+                  </svg>Бесплатный выезд на замер и индивидуальный расчет проекта
+                </li>
+                <li>
+                  <svg class="icon icon-express-delivery ">
+                    <use xlink:href="./images/sprite.svg#express-delivery"></use>
+                  </svg>Быстрая доставка в любой регион РФ
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="company">
-        <div class="outer"> 
-          <div class="inner"> 
-            <div class="company__container"> 
-              <div class="company__content">
-                <h2 class="title">Компания ТМ «Deckart»</h2>
-                <p class="company__about">Компания ТМ «Deckart» является производителем изделий из ДПК: террасной доски, ступеней, ограждений, заборной доски.</p>
-                <div class="company__text">
-                  <p>Качество продукции, широкий ассортимент, разнообразие цветов позволило завоевать признание покупателей.<br><br></p>
-                  <p>Одна из основополагающий целей ТМ «Deckart» —является высокое качество выпускаемой продукции и уникальная технология нанесения 3D текстуры.</p>
-                  <p>Технологами компании был тщательно изучен зарубежный опыт производства изделий из древесно-полимерного композита производителей Китая, США, Европы, Южной Кореи, благодаря чему была разработана политика в области качества, а так же требования к поставщикам оборудования, сырья и материалов.</p>
+        <section class="form form_mini">
+          <div class="outer"> 
+            <div class="inner">
+              <div class="form__container">
+                <div class="form__content">
+                  <div class="form__title">Оставьте заявку - мы детально изучим особенности Вашего проекта<span>и подберем оптимальное решение исходя из задач и бюджета </span></div>
+                  <div class="form__desc">Наш менеджер свяжется с вами в течение 15 минут.</div>
                 </div>
-                <ul> 
-                  <li>3 500+<span>Довольных клиентов</span></li>
-                  <li>250 000м<sup>2</sup><span>Смонтировано террас</span></li>
-                  <li>30+<span>Точек продаж по всей территории России</span></li>
+                <form action="">
+                  <div class="form__placeholder-container form__placeholder-container--js">
+                    <input class="form__input--js" type="text" name="" placeholder=" " required="required" id="name"/>
+                    <label for="name">Имя</label><span class="input__error name-error"></span>
+                  </div>
+                  <p>Пожалуйста представьтесь, как можно к вам обращаться</p>
+                  <div class="form__placeholder-container form__placeholder-container--js">
+                    <input class="form__input--js phone-mask1--js" type="text" name="" placeholder=" " required="required" id="phone"/>
+                    <label for="phone">Номер телефона</label><span class="input__error phone-error"></span>
+                  </div>
+                  <div class="form__checkbox form__placeholder-container--js">
+                    <input class="form__input--js" type="checkbox" name="" placeholder=" " required="required" id="true" checked="checked"/>
+                    <label for="true">Я выражаю свое согласие с Политикой конфиденциальности сайта и разрешаю обработку своих персональных данных</label><span class="input__error true-error"></span>
+                  </div>
+                  <button type="submit">Перезвонить мне</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feedback feedback_mini">
+          <div class="outer">
+            <div class="inner">
+              <div class="title__container">
+                <h2 class="title">Отзывы клиентов</h2>
+                <p> <span>
+                    <svg class="icon icon-star ">
+                      <use xlink:href="./images/sprite.svg#star"></use>
+                    </svg>5.0</span>Средняя оценка<br>наших услуг                   </p>
+              </div>
+              <div class="feedback__container feedback1-js"> 
+                <ul class="swiper-wrapper"> 
+                  <li class="swiper-slide">
+                    <div class="feedback__image"><img src="./images/feedback1.jpg" alt="Отзыв"></div>
+                    <p>АО “Виктория Орлова”<span>проектирование и монтаж террасы ресторана</span></p>
+                    <div> 
+                      <svg class="icon icon-star ">
+                        <use xlink:href="./images/sprite.svg#star"></use>
+                      </svg>5.0
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="feedback__image"><img src="./images/feedback2.png" alt="Отзыв"></div>
+                    <p>Коттеджный поселок “Савинский”<span>проектирование и монтаж террасы и беседки</span></p>
+                    <div> 
+                      <svg class="icon icon-star ">
+                        <use xlink:href="./images/sprite.svg#star"></use>
+                      </svg>5.0
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="feedback__video"><img src="./images/feedback3.jpg" alt="Отзыв"><svg width="52" height="60" viewBox="0 0 52 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 26.5359C52.6667 28.0755 52.6667 31.9245 50 33.4641L6.49999 58.5788C3.83333 60.1184 0.499997 58.1939 0.499997 55.1147L0.499999 4.88526C0.5 1.80606 3.83333 -0.11844 6.5 1.42116L50 26.5359Z"/>
+</svg>
+                    </div>
+                    <p>Ресторан “Вий”<span>проектирование и монтаж террасы ресторана</span></p>
+                    <div> 
+                      <svg class="icon icon-star ">
+                        <use xlink:href="./images/sprite.svg#star"></use>
+                      </svg>5.0
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="feedback__image"><img src="./images/feedback4.png" alt="Отзыв"></div>
+                    <p>Кафе “Столичный Дом”<span>проектирование и монтаж террасы</span></p>
+                    <div> 
+                      <svg class="icon icon-star ">
+                        <use xlink:href="./images/sprite.svg#star"></use>
+                      </svg>5.0
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="feedback__video"><img src="./images/feedback5.jpg" alt="Отзыв"><svg width="52" height="60" viewBox="0 0 52 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 26.5359C52.6667 28.0755 52.6667 31.9245 50 33.4641L6.49999 58.5788C3.83333 60.1184 0.499997 58.1939 0.499997 55.1147L0.499999 4.88526C0.5 1.80606 3.83333 -0.11844 6.5 1.42116L50 26.5359Z"/>
+</svg>
+                    </div>
+                    <p>АО “Виктория Орлова”<span>проектирование и монтаж террасы ресторана</span></p>
+                    <div> 
+                      <svg class="icon icon-star ">
+                        <use xlink:href="./images/sprite.svg#star"></use>
+                      </svg>5.0
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="feedback__image"><img src="./images/feedback6.jpg" alt="Отзыв"></div>
+                    <p>Коттеджный поселок “Савинский”<span>проектирование и монтаж террасы и беседки</span></p>
+                    <div> 
+                      <svg class="icon icon-star ">
+                        <use xlink:href="./images/sprite.svg#star"></use>
+                      </svg>5.0
+                    </div>
+                  </li>
                 </ul>
-                <p>Производство продукции осуществляется строго в соответствии с ТУ, которые разработаны по ГОСТ, что подтверждено Сертификатом Соответствия.</p><a class="btn" href="#" data-id="">Подробнее<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
-</svg>    </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="form"> 
-        <div class="outer"> 
-          <div class="inner">
-            <div class="form__container">
-              <div class="form__content">
-                <div class="form__title">Оставьте заявку - мы детально изучим особенности Вашего проекта<span>и подберем оптимальное решение исходя из задач и бюджета </span></div>
-                <div class="form__desc">Наш менеджер свяжется с вами в течение 15 минут.</div>
-              </div>
-              <form action="">
-                <div class="form__placeholder-container form__placeholder-container--js">
-                  <input class="form__input--js" type="text" name="" placeholder=" " required="required" id="name"/>
-                  <label for="name">Имя</label><span class="input__error name-error"></span>
-                </div>
-                <p>Пожалуйста представьтесь, как можно к вам обращаться</p>
-                <div class="form__placeholder-container form__placeholder-container--js">
-                  <input class="form__input--js phone-mask1--js" type="text" name="" placeholder=" " required="required" id="phone"/>
-                  <label for="phone">Номер телефона</label><span class="input__error phone-error"></span>
-                </div>
-                <div class="form__checkbox form__placeholder-container--js">
-                  <input class="form__input--js" type="checkbox" name="" placeholder=" " required="required" id="true" checked="checked"/>
-                  <label for="true">Я выражаю свое согласие с Политикой конфиденциальности сайта и разрешаю обработку своих персональных данных</label><span class="input__error true-error"></span>
-                </div>
-                <button type="submit">Перезвонить мне</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="feedback"> 
-        <div class="outer">
-          <div class="inner">
-            <div class="title__container">
-              <h2 class="title">Отзывы клиентов</h2>
-              <p> <span>
-                  <svg class="icon icon-star ">
-                    <use xlink:href="./images/sprite.svg#star"></use>
-                  </svg>5.0</span>Средняя оценка<br>наших услуг                   </p>
-            </div>
-            <div class="feedback__container feedback-js"> 
-              <ul class="swiper-wrapper"> 
-                <li class="swiper-slide">
-                  <div class="feedback__image"><img src="./images/feedback1.jpg" alt="Отзыв"></div>
-                  <p>АО “Виктория Орлова”<span>проектирование и монтаж террасы ресторана</span></p>
-                  <div> 
-                    <svg class="icon icon-star ">
-                      <use xlink:href="./images/sprite.svg#star"></use>
-                    </svg>5.0
-                  </div>
-                </li>
-                <li class="swiper-slide">
-                  <div class="feedback__image"><img src="./images/feedback2.png" alt="Отзыв"></div>
-                  <p>Коттеджный поселок “Савинский”<span>проектирование и монтаж террасы и беседки</span></p>
-                  <div> 
-                    <svg class="icon icon-star ">
-                      <use xlink:href="./images/sprite.svg#star"></use>
-                    </svg>5.0
-                  </div>
-                </li>
-                <li class="swiper-slide">
-                  <div class="feedback__video"><img src="./images/feedback3.jpg" alt="Отзыв"><svg width="52" height="60" viewBox="0 0 52 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M50 26.5359C52.6667 28.0755 52.6667 31.9245 50 33.4641L6.49999 58.5788C3.83333 60.1184 0.499997 58.1939 0.499997 55.1147L0.499999 4.88526C0.5 1.80606 3.83333 -0.11844 6.5 1.42116L50 26.5359Z"/>
-</svg>
-                  </div>
-                  <p>Ресторан “Вий”<span>проектирование и монтаж террасы ресторана</span></p>
-                  <div> 
-                    <svg class="icon icon-star ">
-                      <use xlink:href="./images/sprite.svg#star"></use>
-                    </svg>5.0
-                  </div>
-                </li>
-                <li class="swiper-slide">
-                  <div class="feedback__image"><img src="./images/feedback4.png" alt="Отзыв"></div>
-                  <p>Кафе “Столичный Дом”<span>проектирование и монтаж террасы</span></p>
-                  <div> 
-                    <svg class="icon icon-star ">
-                      <use xlink:href="./images/sprite.svg#star"></use>
-                    </svg>5.0
-                  </div>
-                </li>
-                <li class="swiper-slide">
-                  <div class="feedback__video"><img src="./images/feedback5.jpg" alt="Отзыв"><svg width="52" height="60" viewBox="0 0 52 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M50 26.5359C52.6667 28.0755 52.6667 31.9245 50 33.4641L6.49999 58.5788C3.83333 60.1184 0.499997 58.1939 0.499997 55.1147L0.499999 4.88526C0.5 1.80606 3.83333 -0.11844 6.5 1.42116L50 26.5359Z"/>
-</svg>
-                  </div>
-                  <p>АО “Виктория Орлова”<span>проектирование и монтаж террасы ресторана</span></p>
-                  <div> 
-                    <svg class="icon icon-star ">
-                      <use xlink:href="./images/sprite.svg#star"></use>
-                    </svg>5.0
-                  </div>
-                </li>
-                <li class="swiper-slide">
-                  <div class="feedback__image"><img src="./images/feedback6.jpg" alt="Отзыв"></div>
-                  <p>Коттеджный поселок “Савинский”<span>проектирование и монтаж террасы и беседки</span></p>
-                  <div> 
-                    <svg class="icon icon-star ">
-                      <use xlink:href="./images/sprite.svg#star"></use>
-                    </svg>5.0
-                  </div>
-                </li>
-              </ul>
-              <div class="navigation"> 
-                <div class="navigation-container">
-                  <div class="swiper-pagination"></div>
-                  <div class="navigation__button navigation__button-prev feedback__button-prev-js"><svg width="14" height="26" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="navigation"> 
+                  <div class="navigation-container">
+                    <div class="swiper-pagination"></div>
+                    <div class="navigation__button navigation__button-prev feedback__button-prev-js"><svg width="14" height="26" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.2725 30.8029L16 30.0814L1.45441 15.645L16 1.20862L15.2725 0.487127L0 15.645L15.2725 30.8029Z"/>
 </svg>
-                  </div>
-                  <div class="navigation__button navigation__button-next feedback__button-next-js"><svg width="14" height="26" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </div>
+                    <div class="navigation__button navigation__button-next feedback__button-next-js"><svg width="14" height="26" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.2725 30.8029L16 30.0814L1.45441 15.645L16 1.20862L15.2725 0.487127L0 15.645L15.2725 30.8029Z"/>
 </svg>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="useful">
-        <div class="outer"> 
-          <div class="inner useful__container"> 
-            <div class="title__container">
-              <h2 class="title">Полезные статьи и новости</h2>
-            </div>
-            <div class="useful__slider useful-js"> 
-              <ul class="swiper-wrapper"> 
-                <li class="swiper-slide"><img src="./images/useful1.jpg" alt="Как выбрать террасную доску?">
-                  <div class="useful__content"> 
-                    <div class="useful__date">Опубликовано 5 минут назад</div>
-                    <div class="useful__title">Как выбрать террасную доску?</div>
-                    <div class="useful__except">Приятно летом пройтись босиком по теплому деревянному полу террасы, веранды или беседки. А каким будет этот пол? Давайте разбираться!</div><a class="btn useful__link" href="#" data-id="">подробнее<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </section>
+        <section class="company company_mini">
+          <div class="outer"> 
+            <div class="inner"> 
+              <div class="company__container"> 
+                <div class="company__content">
+                  <h2 class="title">Компания ТМ «Deckart»</h2>
+                  <p class="company__about">Компания ТМ «Deckart» является производителем изделий из ДПК: террасной доски, ступеней, ограждений, заборной доски.</p>
+                  <div class="company__text">
+                    <p>Качество продукции, широкий ассортимент, разнообразие цветов позволило завоевать признание покупателей.<br><br></p>
+                    <p>Одна из основополагающий целей ТМ «Deckart» —является высокое качество выпускаемой продукции и уникальная технология нанесения 3D текстуры.</p>
+                    <p>Технологами компании был тщательно изучен зарубежный опыт производства изделий из древесно-полимерного композита производителей Китая, США, Европы, Южной Кореи, благодаря чему была разработана политика в области качества, а так же требования к поставщикам оборудования, сырья и материалов.</p>
+                  </div><a class="btn" href="#" data-id="">Подробнее<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
 </svg>    </a>
-                    <ul> 
-                      <li> <a href="#">#строительство</a></li>
-                      <li> <a href="#">#террасная доска</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="swiper-slide"><img src="./images/useful2.png" alt="Укладка террасной доски, уeстойчивость к колебаниям влажности и температур">
-                  <div class="useful__content"> 
-                    <div class="useful__date">Опубликовано 2 января 2022</div>
-                    <div class="useful__title">Укладка террасной доски, уeстойчивость к колебаниям влажности и температур</div>
-                    <div class="useful__except">Террасная доска (дёкинг) из древесно-полимерного композита — красивое и долговечное напольное покрытие для террас, беседок  ...</div><a class="btn useful__link" href="#" data-id="">подробнее<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
-</svg>    </a>
-                    <ul> 
-                      <li> <a href="#">#укладка террасы</a></li>
-                      <li> <a href="#">#ограждения</a></li>
-                      <li> <a href="#">#своими руками</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="swiper-slide"><img src="./images/useful3.png" alt="Как выбрать террасную доску?">
-                  <div class="useful__content"> 
-                    <div class="useful__date">Опубликовано 2 января 2022</div>
-                    <div class="useful__title">Виды террасной доски</div>
-                    <div class="useful__except">Приятно летом пройтись босиком по теплому деревянному полу террасы, веранды или беседки. А каким будет этот пол? Давайте разбираться!</div><a class="btn useful__link" href="#" data-id="">подробнее<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
-</svg>    </a>
-                    <ul> 
-                      <li> <a href="#">#террасная доска</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="swiper-slide"><img src="./images/useful1.jpg" alt="Как выбрать террасную доску?">
-                  <div class="useful__content"> 
-                    <div class="useful__date">Опубликовано 5 минут назад</div>
-                    <div class="useful__title">Как выбрать террасную доску?</div>
-                    <div class="useful__except">Приятно летом пройтись босиком по теплому деревянному полу террасы, веранды или беседки. А каким будет этот пол? Давайте разбираться!</div><a class="btn useful__link" href="#" data-id="">подробнее<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
-</svg>    </a>
-                    <ul> 
-                      <li> <a href="#">№строительство</a></li>
-                      <li> <a href="#">#террасная доска    </a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="slider__button slider__button-prev useful__button-prev-js"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15.2725 30.8029L16 30.0814L1.45441 15.645L16 1.20862L15.2725 0.487127L0 15.645L15.2725 30.8029Z"/>
-</svg>
-            </div>
-            <div class="slider__button slider__button-next useful__button-next-js"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15.2725 30.8029L16 30.0814L1.45441 15.645L16 1.20862L15.2725 0.487127L0 15.645L15.2725 30.8029Z"/>
-</svg>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="banner">
-        <div class="outer"> 
-          <div class="inner"> 
-            <div class="banner__container"> 
-              <div class="banner__content">
-                <h2 class="title">Преимущества террасной доски ДПК</h2><img src="./images/bg1.png" alt="декор">
-                <div class="banner__about">Благодаря содержанию полимеров дёкинг не впитывает влагу. Его не нужно укрывать в период затяжных дождей, а также на зиму. </div>
-                <div class="banner__text">При значительных колебаниях влажности и температуры натуральная древесина высыхает и трескается. Террасная доска из ДПК лишена этого недостатка. Она не впитывает влагу, поэтому даже при резких перепадах температур не теряет первоначальный вид.</div><a class="btn" href="#" data-id="">Текст целиком<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.0206 0.5C7.09795 0.5 7.17214 0.530727 7.22683 0.585423C7.28153 0.640118 7.31226 0.714301 7.31226 0.791651L7.31226 4.29147C7.31226 4.36882 7.28153 4.443 7.22683 4.4977C7.17214 4.55239 7.09795 4.58312 7.0206 4.58312C6.94325 4.58312 6.86907 4.55239 6.81438 4.4977C6.75968 4.443 6.72895 4.36882 6.72895 4.29147L6.72895 1.4957L0.810765 7.41447C0.783648 7.44159 0.751456 7.4631 0.716027 7.47777C0.680597 7.49245 0.642624 7.5 0.604276 7.5C0.565927 7.5 0.527954 7.49245 0.492524 7.47777C0.457095 7.4631 0.424903 7.44159 0.397786 7.41447C0.37067 7.38735 0.34916 7.35516 0.334485 7.31973C0.319809 7.2843 0.312256 7.24633 0.312256 7.20798C0.312256 7.16963 0.319809 7.13166 0.334485 7.09623C0.34916 7.0608 0.37067 7.02861 0.397786 7.00149L6.31656 1.0833L3.52079 1.0833C3.44344 1.0833 3.36926 1.05258 3.31456 0.99788C3.25986 0.943185 3.22914 0.869002 3.22914 0.791652C3.22914 0.714301 3.25986 0.640118 3.31456 0.585423C3.36926 0.530727 3.44344 0.5 3.52079 0.5L7.0206 0.5Z"/>
-</svg>    </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </main>
+        </section>
+      </main>
+      <aside></aside>
+    </div>
     <footer class="footer"> 
       <div class="outer">
         <div class="inner">
