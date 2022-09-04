@@ -12277,6 +12277,10 @@ progress {
   width: 1em;
 }
 
+.icon-arrr {
+  width: 1.5em;
+}
+
 .icon-basket {
   width: 1.8947368421em;
 }
@@ -12452,6 +12456,18 @@ p {
 
 a {
   text-decoration: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .flex {
@@ -15957,6 +15973,149 @@ label[for=phone]::before {
   display: block;
 }
 
+.filter {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.filter form {
+  padding-top: 20px;
+  border-top: 1px solid #E8E8E8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filter__title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1rem;
+  padding-bottom: 28px;
+  position: relative;
+  cursor: pointer;
+}
+.filter__title::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 3px;
+  right: 0;
+  top: 5px;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='4' viewBox='0 0 6 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.132069 0.239964C0.216659 0.166509 0.331371 0.125244 0.450981 0.125244C0.57059 0.125244 0.685303 0.166509 0.769892 0.239964L3.00272 2.17947L5.23555 0.239964C5.32063 0.168591 5.43457 0.129097 5.55284 0.12999C5.67111 0.130883 5.78425 0.17209 5.86788 0.244737C5.95152 0.317383 5.99896 0.415657 5.99998 0.518391C6.00101 0.621125 5.95554 0.720099 5.87338 0.793997L3.32163 3.01052C3.23705 3.08398 3.12233 3.12524 3.00272 3.12524C2.88311 3.12524 2.7684 3.08398 2.68381 3.01052L0.132069 0.793997C0.0475054 0.72052 0 0.620877 0 0.516981C0 0.413084 0.0475054 0.313441 0.132069 0.239964Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+
+.filter__price p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+
+.filter__price-bottom .irs-from {
+  display: none;
+}
+.filter__price-bottom .irs-to {
+  display: none;
+}
+.filter__price-bottom .irs-min, .filter__price-bottom .irs-max {
+  display: none;
+}
+.filter__price-bottom .irs--flat .irs-line {
+  background: #E8E8E8;
+  border-radius: 5px;
+  height: 2px;
+  top: 30px;
+}
+.filter__price-bottom .irs-handle.from, .filter__price-bottom .irs-handle.to {
+  background: #FFFFFF;
+  background-color: #FFFFFF;
+  border: 4px solid #0042A4;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.filter__price-bottom .irs--flat .irs-handle > i:first-child {
+  display: none;
+}
+.filter__price-bottom .irs--flat .irs-bar {
+  background-color: #0042A4;
+  border-radius: 5px;
+  top: 30px;
+  height: 2px;
+}
+.filter__price-bottom .irs--flat .irs-single {
+  display: none;
+}
+
+.filter__price-top {
+  margin-top: 6px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.filter__price-top .filter__placeholder-container {
+  position: relative;
+}
+.filter__price-top .filter__placeholder-container label {
+  position: absolute;
+  right: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 120%;
+  color: #9C9C9C;
+}
+.filter__price-top .filter__placeholder-container input {
+  width: 100%;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  outline: #0042A4;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  padding: 9px 24px;
+}
+
+.filter__color, .filter__other {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.filter__color p, .filter__other p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+.filter__color .form__checkbox label, .filter__other .form__checkbox label {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #000000;
+}
+.filter__color input:checked ~ label, .filter__other input:checked ~ label {
+  font-weight: 600;
+  color: #000000;
+}
+.filter__color input:checked ~ label::before, .filter__other input:checked ~ label::before {
+  border: 1px solid #0042A4;
+}
+.filter__color input:checked ~ label::after, .filter__other input:checked ~ label::after {
+  transform: rotate(-45deg);
+  left: 7px;
+  top: 6px;
+  z-index: 1;
+  border-left: 2px solid #0042A4;
+  border-bottom: 2px solid #0042A4;
+}
+
+.filter__size p, .filter__length p, .filter__made p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+
 .product {
   margin-top: -55px;
 }
@@ -16023,6 +16182,8 @@ label[for=phone]::before {
 }
 .accordion div::after {
   content: "+";
+  display: flex;
+  align-items: center;
 }
 .accordion div::before {
   content: "-";
@@ -16038,29 +16199,30 @@ label[for=phone]::before {
   border: 1px solid #0042A4;
 }
 
-.accordion._active {
+.accordion.active {
   border-bottom: unset;
 }
-.accordion._active div::after {
+.accordion.active div::after {
   content: "+";
   display: none;
 }
-.accordion._active div::before {
+.accordion.active div::before {
   content: "-";
-  display: block;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
 }
 
 .panel {
   padding-left: 57px;
   padding-right: 13px;
-  padding-bottom: 33px;
   background-color: white;
-  display: none;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 130%;
   overflow: hidden;
-  transition: 0.4s;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
   border-bottom: 1px solid #E8E8E8;
 }
 
@@ -16449,6 +16611,24 @@ body.is-animate .overlay {
 }
 .wrapper__content {
   flex: 1;
+}
+
+.form__select-container {
+  margin-top: 6px;
+}
+.form__select-container select {
+  width: 100%;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  padding: 9px 24px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  appearance: none;
+  overflow: hidden;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='4' viewBox='0 0 6 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.132069 0.239964C0.216659 0.166509 0.331371 0.125244 0.450981 0.125244C0.57059 0.125244 0.685303 0.166509 0.769892 0.239964L3.00272 2.17947L5.23555 0.239964C5.32063 0.168591 5.43457 0.129097 5.55284 0.12999C5.67111 0.130883 5.78425 0.17209 5.86788 0.244737C5.95152 0.317383 5.99896 0.415657 5.99998 0.518391C6.00101 0.621125 5.95554 0.720099 5.87338 0.793997L3.32163 3.01052C3.23705 3.08398 3.12233 3.12524 3.00272 3.12524C2.88311 3.12524 2.7684 3.08398 2.68381 3.01052L0.132069 0.793997C0.0475054 0.72052 0 0.620877 0 0.516981C0 0.413084 0.0475054 0.313441 0.132069 0.239964Z' fill='black'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center right 17px;
 }
 
 /**

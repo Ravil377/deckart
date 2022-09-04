@@ -7,8 +7,9 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Террасная доска из ДПК</title>
     <link rel="yandex-tableau-widget" href="./images/favicons/yandex-browser-manifest.json">
-    <link rel="stylesheet" href="./css/main.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-<!--[if lt IE 9]>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body class="category">
@@ -1214,34 +1215,34 @@
               </div>
               <div class="question__content"> 
                 <button class="accordion"> 
-                  <div></div>Вы можете воспользоваться услугами нашего монтажа?
+                  <div></div>Вы можете воспользоваться услугами нашего монтажа
                 </button>
                 <div class="panel">
-                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...<br><br></p>
                 </div>
                 <button class="accordion"> 
                   <div></div>Типы террасной доски?
                 </button>
                 <div class="panel">
-                  <p>Lorem ipsum...</p>
+                  <p>Lorem ipsum...<br><br></p>
                 </div>
                 <button class="accordion">
                   <div></div>Широкий выбор цветовых решений?
                 </button>
                 <div class="panel">
-                  <p>Композит из древесно-полимерной смеси имеет еще одно очевидное преимущество – возможность создать доску любого цвета и фактуры. Если древесина ограничена характерным естественным оттенком, рисунком, в искусственном материале никаких лимитов нет. </p>
+                  <p>Композит из древесно-полимерной смеси имеет еще одно очевидное преимущество – возможность создать доску любого цвета и фактуры. Если древесина ограничена характерным естественным оттенком, рисунком, в искусственном материале никаких лимитов нет. <br><br></p>
                 </div>
                 <button class="accordion"> 
                   <div></div>Варианты террасной доски из ДПК
                 </button>
                 <div class="panel">
-                  <p>Композит из древесно-полимерной смеси имеет еще одно очевидное преимущество – возможность создать доску любого цвета и фактуры. Если древесина ограничена характерным естественным оттенком, рисунком, в искусственном материале никаких лимитов нет. </p>
+                  <p>Композит из древесно-полимерной смеси имеет еще одно очевидное преимущество – возможность создать доску любого цвета и фактуры. Если древесина ограничена характерным естественным оттенком, рисунком, в искусственном материале никаких лимитов нет. <br><br></p>
                 </div>
                 <button class="accordion"> 
                   <div></div>Варианты террасной доски из ДПК
                 </button>
                 <div class="panel">
-                  <p>Террасная доска по длине</p>
+                  <p>Террасная доска по длине<br><br></p>
                 </div>
               </div>
             </section>
@@ -1249,7 +1250,80 @@
           <aside>
             <div class="filter"> 
               <div class="filter__title">Подбор по параметрам</div>
-              <form action=""> </form>
+              <form action="">
+                <div class="filter__price">
+                  <p>Ценовой диапазон</p>
+                  <div class="filter__price-top">
+                    <div class="filter__placeholder-container">
+                      <input type="number" name="min" placeholder=" " required="required" id="min">
+                      <label for="min">₽</label>
+                    </div>
+                    <div class="filter__placeholder-container">
+                      <input type="number" name="max" placeholder=" " required="required" id="max">
+                      <label for="max">₽</label>
+                    </div>
+                  </div>
+                  <div class="filter__price-bottom">
+                    <input class="js-range-slider" type="text" name="my_range" value="" data-type="double" data-min="4000" data-max="8500" data-from="4000" data-to="8500">
+                  </div>
+                </div>
+                <div class="filter__color"> 
+                  <p>Цвет</p>
+                  <div class="form__checkbox form__placeholder-container--js">
+                    <input class="form__input--js" type="checkbox" name="" placeholder=" " required="required" id="color1" checked="checked"/>
+                    <label for="color1">Коричневый/венге</label><span class="input__error color1-error"></span>
+                  </div>
+                  <div class="form__checkbox form__placeholder-container--js">
+                    <input class="form__input--js" type="checkbox" name="" placeholder=" " required="required" id="color2" checked="checked"/>
+                    <label for="color2">Светлосерый</label><span class="input__error color2-error"></span>
+                  </div>
+                  <div class="form__checkbox form__placeholder-container--js">
+                    <input class="form__input--js" type="checkbox" name="" placeholder=" " required="required" id="color3" checked="checked"/>
+                    <label for="color3">Желтый нарцисс</label><span class="input__error color3-error"></span>
+                  </div>
+                  <div class="form__checkbox form__placeholder-container--js">
+                    <input class="form__input--js" type="checkbox" name="" placeholder=" " required="required" id="color4" checked="checked"/>
+                    <label for="color4">Слоновая кость</label><span class="input__error color4-error"></span>
+                  </div>
+                </div>
+                <div class="filter__size"> 
+                  <p>Размер</p>
+                  <div class="form__select-container">
+                    <select name="size"> 
+                      <option>140х20 мм</option>
+                      <option>140х20 мм</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="filter__length">
+                  <p>Длина</p>
+                  <div class="form__select-container">
+                    <select name="length"> 
+                      <option>3 метра</option>
+                      <option>3 метра</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="filter__made">
+                  <p>Производитель</p>
+                  <div class="form__select-container">
+                    <select name="length"> 
+                      <option>Deckart (Россия)</option>
+                      <option>Deckart (Россия)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="filter__other"> 
+                  <div class="form__checkbox form__placeholder-container--js">
+                    <input class="form__input--js" type="checkbox" name="" placeholder=" " required="required" id="sale" checked="checked"/>
+                    <label for="sale">Распродажа</label><span class="input__error sale-error"></span>
+                  </div>
+                  <div class="form__checkbox form__placeholder-container--js">
+                    <input class="form__input--js" type="checkbox" name="" placeholder=" " required="required" id="Новинки" checked="checked"/>
+                    <label for="Новинки">Новинки</label><span class="input__error Новинки-error"></span>
+                  </div>
+                </div>
+              </form>
             </div>
             <menu class="menu aside-menu-js">
               <li> 
@@ -1519,7 +1593,8 @@
       <svg class="icon icon-up ">
         <use xlink:href="./images/sprite.svg#up"></use>
       </svg></a>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -54,13 +54,13 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
-    this.classList.toggle("_active");
+    this.classList.toggle("active");
     var panel = this.nextElementSibling;
 
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
     } else {
-      panel.style.display = "block";
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
 }
@@ -197,9 +197,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _menu_menu__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_menu_menu__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _accordion_accordion__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./accordion/accordion */ "./src/components/accordion/accordion.js");
 /* harmony import */ var _accordion_accordion__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_accordion_accordion__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _filter_filter__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./filter/filter */ "./src/components/filter/filter.js");
+/* harmony import */ var _filter_filter__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_filter_filter__WEBPACK_IMPORTED_MODULE_14__);
 // import simpleParallax from 'simple-parallax-js';
 // Form
  // Hamburger
+
 
 
 
@@ -283,6 +286,21 @@ if (document.querySelector(feedback1)) {
     }
   });
 }
+
+/***/ }),
+
+/***/ "./src/components/filter/filter.js":
+/*!*****************************************!*\
+  !*** ./src/components/filter/filter.js ***!
+  \*****************************************/
+/***/ (() => {
+
+$(".js-range-slider").ionRangeSlider({
+  onChange: function onChange(data) {
+    // Called every time handle position is changed
+    console.log(data.from);
+  }
+});
 
 /***/ }),
 
