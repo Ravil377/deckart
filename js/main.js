@@ -169,9 +169,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _footer_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./footer/footer */ "./src/components/footer/footer.js");
 /* harmony import */ var _modal_modal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modal/modal */ "./src/components/modal/modal.js");
 /* harmony import */ var _modal_modal__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modal_modal__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _menu_menu__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./menu/menu */ "./src/components/menu/menu.js");
+/* harmony import */ var _menu_menu__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_menu_menu__WEBPACK_IMPORTED_MODULE_12__);
 // import simpleParallax from 'simple-parallax-js';
 // Form
  // Hamburger
+
 
 
 
@@ -621,6 +624,20 @@ hitContainer && hitContainer.addEventListener('click', function (e) {
   if (target.classList.contains('card__remove-js') && Number(num.textContent) != 1) {
     num.textContent = Number(num.textContent) - 1;
   }
+});
+
+/***/ }),
+
+/***/ "./src/components/menu/menu.js":
+/*!*************************************!*\
+  !*** ./src/components/menu/menu.js ***!
+  \*************************************/
+/***/ (() => {
+
+var asideMenu = document.querySelector('.aside-menu-js');
+asideMenu && asideMenu.addEventListener('click', function (e) {
+  var li = e.target.closest('li');
+  li && li.classList.toggle('_active');
 });
 
 /***/ }),
