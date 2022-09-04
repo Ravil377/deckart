@@ -43,6 +43,30 @@ module.exports = _createClass;
 
 /***/ }),
 
+/***/ "./src/components/accordion/accordion.js":
+/*!***********************************************!*\
+  !*** ./src/components/accordion/accordion.js ***!
+  \***********************************************/
+/***/ (() => {
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("_active");
+    var panel = this.nextElementSibling;
+
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "./src/components/article/article.js":
 /*!*******************************************!*\
   !*** ./src/components/article/article.js ***!
@@ -171,9 +195,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modal_modal__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modal_modal__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _menu_menu__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./menu/menu */ "./src/components/menu/menu.js");
 /* harmony import */ var _menu_menu__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_menu_menu__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _accordion_accordion__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./accordion/accordion */ "./src/components/accordion/accordion.js");
+/* harmony import */ var _accordion_accordion__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_accordion_accordion__WEBPACK_IMPORTED_MODULE_13__);
 // import simpleParallax from 'simple-parallax-js';
 // Form
  // Hamburger
+
 
 
 
