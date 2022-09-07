@@ -71,10 +71,18 @@ if (document.querySelector(accessories)) {
     },
     breakpoints: {
       768: {
-        slidesPerView: 2,
-        spaceBetween: 40
+        slidesPerView: 3,
+        spaceBetween: 20
       },
-      1200: {
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1100: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1300: {
         slidesPerView: 4,
         spaceBetween: 20
       }
@@ -361,7 +369,13 @@ if (document.querySelector(detail)) {
     spaceBetween: 20,
     slidesPerView: 4,
     freeMode: true,
-    watchSlidesProgress: true
+    watchSlidesProgress: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
+    }
   });
   var detailSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](detail, {
     slidesPerView: 1,
